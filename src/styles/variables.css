@@ -1,0 +1,29 @@
+/* src/styles/variables.css */
+:root {
+  /* Light Theme */
+  /* --header-bg: #232635; */
+  --header-bg: #630031;
+  --primary-color: #CF4420;
+  /* --primary-color: #2563eb; */
+  --accent-color: #10b981;
+  --surface-color: #ffffff;
+  --border-color: #e4e7eb;
+  --text-primary: #1a1d28;
+  --text-secondary: #64748b;
+  --body-bg: #f3f4f6;
+
+  /* Fonts & Spacing */
+  --font-family: 'Inter', sans-serif;
+  --line-height: 1.6;
+  --base-padding: 1rem;
+}
+
+/* Dark Theme overrides */
+.dark-mode {
+  --header-bg: #1b1d26;
+  --surface-color: #2a2c36;
+  --border-color: #3a3c47;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --body-bg: #1e2029;
+}

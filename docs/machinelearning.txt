@@ -1,0 +1,8 @@
+# File Documentation
+
+## Dependencies
+Imports: firebase_admin
+Unresolved Dependencies: firebase_admin
+
+
+## Functions

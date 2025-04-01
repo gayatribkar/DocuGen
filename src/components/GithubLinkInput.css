@@ -1,0 +1,124 @@
+/* src/components/GithubLinkInput/GithubLinkInput.css */
+
+.github-input-container {
+  margin-bottom: 1rem;
+}
+
+.input-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.label-text {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--surface-color);
+  padding: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-wrapper.valid {
+  border-color: var(--accent-color);
+}
+
+.input-icon {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+
+
+.github-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  color: var(--text-primary);
+  background-color: transparent;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; /* Adds space between text and left border */
+}
+
+
+.validation-check {
+  color: var(--accent-color);
+  margin-left: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+.github-input-container {
+  width: 100%;
+}
+
+.input-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 12px;  /* Same as persona cards */
+  border: 1px solid var(--border); /* Same border */
+  padding: 0.4rem;
+  width: 100%;
+  transition: border 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Slight shadow like persona cards */
+}
+
+.input-wrapper.valid {
+  border-color: var(--accent-color);
+}
+
+.input-icon {
+  margin-right: 0.75rem;
+  margin-top: 0.3rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.github-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  background: transparent; /* Keep same background */
+}
+
+.github-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.validation-check {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}

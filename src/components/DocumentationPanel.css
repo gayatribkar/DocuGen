@@ -1,0 +1,177 @@
+/* .documentation-panel {
+  width: 1000px;
+  max-width: 100%;
+  background-color: var(--surface-color);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+} */
+
+.documentation-panel {
+  /* Remove fixed width and let it take the full available width */
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--surface-color);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.doc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.doc-header h2 {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+}
+
+.download-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #fc9b25;
+}
+
+.doc-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+/* Markdown element styles */
+.doc-content h1,
+.doc-content h2,
+.doc-content h3,
+.doc-content h4,
+.doc-content h5,
+.doc-content h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.doc-content p {
+  margin-bottom: 0.8rem;
+}
+
+.doc-content pre {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.doc-content details {
+  background: #f9f9f9;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.doc-content details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+.branch-list {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #f1f1f1;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.branch-list h3 {
+  margin-top: 0;
+}
+
+.branch-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.branch-list li {
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.copy-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.copy-btn:hover {
+  background-color: #fc9b25;
+}
+
+
+
+.download-btn,
+.copy-btn {
+  background-color: var(--primary-color); /* Retains original color */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem; /* Reduced padding for smaller size */
+  font-size: 0.9rem;  /* Slightly smaller font size */
+  font-weight: 600;
+  border-radius: 6px; /* Slightly smaller rounded corners */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover,
+.copy-btn:hover {
+  transform: scale(1.03); /* Lower scale effect for a subtle hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.download-btn:focus,
+.copy-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Reduced focus ring size */
+}
+
