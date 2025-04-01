@@ -23,41 +23,6 @@ function App() {
   const [branches, setBranches] = useState([]);
   const [selectedBranch, setSelectedBranch] = useState("");
 
-
-  // API Call to Generate Documentation
-  // const handleGenerateDocs = async () => {
-  //   if (!githubLink.trim()) return;
-
-  //   setIsProcessing(true);
-  //   setDocumentation(""); // Clear documentation before new generation
-
-  //   try {
-  //     const response = await fetch("http://localhost:5000/generate-docs", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify({ githubLink: githubLink.trim(), persona }),
-  //     });
-
-  //     if (!response.ok) {
-  //       throw new Error(`HTTP error! status: ${response.status}`);
-  //     }
-
-  //     const data = await response.json();
-  //     console.log("Received Data:", data);  // Log the response data
-
-  //     // Update documentation and processed data in state
-  //     setDocumentation(data.gpt_summary || "No documentation generated.");
-  //     setProcessedData(data.processed_data); // Set the processed data (groups, chunks, etc.)
-  //   } catch (error) {
-  //     console.error("Documentation generation failed:", error);
-  //     setDocumentation(
-  //       "Error: Failed to generate documentation. Please check the GitHub URL and try again."
-  //     );
-  //   } finally {
-  //     setIsProcessing(false);
-  //   }
-  // };
-
   const handleGenerateDocs = async () => {
     if (!githubLink.trim()) return;
     setIsProcessing(true);
@@ -131,6 +96,7 @@ function App() {
     if (!message.trim()) return;
     
     // Append the user's message to the chat history
+    
     const newMessages = [...chatMessages, { sender: "user", text: message }];
     setChatMessages(newMessages);
     

@@ -40,6 +40,77 @@
 
 
 
+/* PersonaSelector.css */
+.persona-selector {
+  margin-bottom: 20px;
+}
+
+.persona-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.persona-card {
+  padding: 1.1rem;
+  background: var(--surface-color);  /* Use the variable from your variables.css */
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.persona-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.persona-card.active {
+  border-color: var(--primary-color);
+  background: rgba(37, 99, 235, 0.03);
+}
+
+.persona-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.persona-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.branch-selector {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.branch-selector label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.branch-selector select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Add some spacing between options */
+.branch-selector select option {
+  padding: 5px;
+}
+
+
 
 
 

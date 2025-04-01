@@ -175,3 +175,17 @@
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Reduced focus ring size */
 }
 
+
+
+
+.doc-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto; /* Enables vertical scrolling when content overflows */
+  padding: 1rem;
+  border: 1px solid var(--border-color); /* Optional border for clarity */
+  background-color: #fff; /* Optional background color */
+}
+
