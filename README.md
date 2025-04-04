@@ -25,12 +25,17 @@ DocuGen is a fullstack web app that generates intelligent documentation for GitH
 - Backend and frontend are served from the **same Render app**
 - All `fetch()` calls use **relative paths** like `/generate-docs`
 - Static React app is served using:
-  ```js
+
 ### 1. To Run Locally
 
 ```bash
 npm install
 npm run build
 node servernew.js
+```
+### 2. Start React APP
+
+```bash
+npm start
 ```
 
